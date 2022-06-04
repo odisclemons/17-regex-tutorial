@@ -1,4 +1,10 @@
-let testStr = "Odis Clemons is clearly an expert on regular expressions!";
+let testStr = `
+<>
+<div>
+    <p>this is a sample of code and stuff.</p>
+</div>
+</>
+`;
 
-let regex = /odis/gi;
+let regex = /<\/?[a-z]+>/gi;
 console.log(testStr.match(regex));
