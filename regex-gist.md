@@ -89,3 +89,5 @@ console.log(testStr.match(regex));
 ## Author
 
 My name is Odis Clemons and I am clearly an expert on regular expressions as you can see. You can contact me at odis.clemons@gmail.com or visit my github profile at [https://github.com/odisclemons](https://github.com/odisclemons).
+
+**Note:** This gist is missing my commit history since it started as a github repo. To view the commit history, the original repo link is here: [https://github.com/odisclemons/17-regex-tutorial](https://github.com/odisclemons/17-regex-tutorial)
