@@ -36,6 +36,7 @@ This regex returns strings that:
 - [Bracket Expressions](#bracket-expressions)
 - [Flags](#flags)
 - [Character Escapes](#character-escapes)
+- [Test Code for JavaScript](#test-code-for-javascript)
 
 ## Regex Components
 
@@ -60,6 +61,30 @@ This regex returns strings that:
 ### Character Escapes
 
 > We needed to search for the **_/_** which signifies a closing tag in html. The **_/_** is also a meta character in regex which needs to be escaped since it signifies opening and closing of a regex. Escaping the **_/_** with a **_\\_** tells the engine to not execute the next character, but instead treat it like a regular text character. I even had to escape the escape character in this markdown file!
+
+### Test Code for JavaScript
+
+> Here is some code you can run to test the regex. You can adapt it to your language of choice.
+
+```
+let testStr = `
+<>
+<div>
+    <p>this is a sample of code and stuff.</p>
+</div>
+</>
+// invalid tags below shouldnt be returned:
+
+<invalid
+invalid>
+<12313>
+<></>
+<&**&*^&^>
+`;
+
+let regex = /<\/?[a-z]+>/gi;
+console.log(testStr.match(regex));
+```
 
 ## Author
 
